@@ -1,0 +1,394 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background-image: url(./pic/1920x1200-6012481-sunrise-mountains-sky-iran-iran-clouds.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: linear-gradient(
+        to right,
+        #283048c0,
+        #859398
+    );
+}
+
+.head {
+    margin: 0px;
+    margin-top: -20px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    background-image:  linear-gradient(rgba(220, 238, 250, 0.3),rgba(192, 232, 248, 0.3)),url(./pic/11740.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: aqua;
+    transition: .4s;
+    cursor: pointer;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+header ul li a:hover {
+    color: rgb(133, 253, 253);
+    transition: .4s;
+    cursor: pointer;
+  
+}
+
+hr {
+    width: 80%;
+}
+
+article {
+    width: 500px;
+}
+
+article h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 70px;
+}
+
+article p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 70%;
+}
+
+.part-1 {
+    margin: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iran-nature {
+    width: 350px;
+    height: 250px;
+}
+
+.tasvir {
+    display: flex;
+    /* flex-direction: row; */
+    /* position: sticky; */
+    justify-content: right;
+    
+
+}
+
+.iran-nature {
+    order: 2;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.matn-2 {
+    padding-right: 1vw;
+    padding-left: 1.5vw;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(171, 199, 207, 0.418);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.matn-2 p {
+    font-size: 15px;
+}
+
+.matn-2 h5 {
+    color: white;
+    font-size: 18px;
+}
+
+.matn-2 img {
+    width: 25px;
+}
+
+
+/* main -------------------------------------------------------------------------------------------- */
+
+main section {
+    color: white;
+    font-family: sans-serif;
+    /* width: 80%; */
+    /* height: 50%; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+section.table {
+    background-color: rgba(171, 199, 207, 0.418);
+    padding: 10px 50px;
+    margin-top: -100px;
+    border-radius: 10px;
+}
+
+table,tr,th {
+    font-family: sans-serif;
+    color: white;
+    padding: 2px;
+    border: white 1px solid;
+    border-collapse: collapse;
+}
+
+table,tr,td {
+    color: white;
+    padding: 3px 40px;
+    border: white 1px solid;
+    border-collapse: collapse;
+    
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(22, 238, 238, 0.137);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(22, 238, 94, 0.137);
+}
+
+tr:hover {
+    background-color: rgba(81, 83, 83, 0.151);
+}
+
+
+/* flexbox---------------------------------------------------------------------------------------- */
+
+.flex-parent {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-content: space-between; */
+}
+
+.flex-parent section {
+    background-color: rgba(0, 247, 255, 0.301);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    border-left: 5px rgb(255, 136, 0) solid;
+}
+
+.flex-parent section a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.flex-parent section:hover {
+    background-color: rgba(17, 132, 167, 0.411);
+    box-shadow: 2px 5px 30px rgba(32, 31, 31, 0.5);
+}
+
+.flex-parent img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+main {
+    margin-bottom: 20vh;
+}
+
+/* footer ---------------------------------------------------------------------- */
+
+footer {
+    display: flex;
+    background-color: rgba(5, 5, 5, 0.719);
+    color: white;
+    padding: 3em;
+    justify-content: center;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+@media screen and (max-width: 700px) {
+    header ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 0px 20px;
+        
+    }
+    
+    header ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        
+    }
+
+    
+
+    header {
+        /* display: flex; */
+        align-items: center;
+        /* justify-content: space-between; */
+        padding-top: 40px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .logo {
+        font-size: 4vw;
+    }
+    
+    .logo a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .logo a:hover {
+        color: aqua;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+    .tasvir {
+        width: auto;
+        margin-top: 5vh;
+    }
+
+    .iran {
+        margin: auto;
+    }
+    
+    .direction {
+        display: none;
+    }
+
+    .part-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .part-1 .matn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .part-1 .matn h2 {
+        font-size: 5vw;
+        display: inline;
+
+    }
+
+    .part-1 .matn p {
+        font-size: 3vw;
+        display: inline;
+        text-align: center;
+    }
+
+    .tasvir img {
+        width: 60vw;
+    }
+
+    .tasvir .matn-2 {
+        width: 40vw;
+        font-size: 3vw;
+    }
+
+    section.table {
+        background-color: rgba(171, 199, 207, 0.418);
+        padding: auto;
+        margin-top: -100px;
+        border-radius: 10px;
+    }
+    
+    table,tr,th {
+        width: auto;
+        font-family: sans-serif;
+        padding: 0px;
+        color: white;
+        font-size: 3vw;
+        border: white 1px solid;
+        border-collapse: collapse;
+    }
+    
+    table,tr,td {
+        color: white;
+        font-size: 3vw;
+        padding: 0px;
+        width: auto;
+        border: white 1px solid;
+        border-collapse: collapse;
+        
+    }
+
+    .flex-parent {
+        padding-left: 15vw;
+        width: auto;
+        overflow-wrap: break-word;
+        overflow: auto;
+        font-size: 2vw;
+    }
+
+    .flex-parent section {
+        background-color: rgba(0, 247, 255, 0.301);
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        margin-left: 10px;
+        /* border-left: 5px rgb(255, 136, 0) solid; */
+    }
+
+
+    .flex-parent img {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
+
+}
+
+
+
+
